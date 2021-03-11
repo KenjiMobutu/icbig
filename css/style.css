@@ -1,7 +1,36 @@
 * {
 	margin: 0;
+	background-color: grey;
+}
+
+body div {
+	background-color: #18b4f7;
+	font-size: 25px;
+	text-align: left;
+	color: white;
+}
+body div a {
+	background-color: #18b4f7;
+	color: white;
+}
+
+ul {
+    margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
 }
 
 body {
-	background-color: darkgray;
+	
 }
