@@ -16,8 +16,8 @@ body div a {
 
 ul {
     margin: 0;
-  padding: 0;
-  overflow: hidden;
+  	padding: 0;
+  	overflow: hidden;
 }
 
 li {
@@ -25,12 +25,40 @@ li {
 }
 
 li a {
+
   display: block;
   color: white;
   padding: 8px;
   text-decoration: none;
 }
 
+table  {
+	border: 1px solid black;
+	border-radius: 5px;
+	border-spacing:0;
+	vertical-align: top;
+}
+
+th {
+  background-color: lightblue;
+}
+
+tfoot tr td {
+	background-color: lightblue;
+}
+
 body {
 	
+}
+
+footer {
+	color: darkgrey;
+	text-align: center;
+}
+
+
+footer ul li a {
+	color: darkgrey;
+	text-align: center;
+
 }
