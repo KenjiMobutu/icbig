@@ -1,35 +1,74 @@
 * {
+	background: #424242;
 	margin: 0;
-	background-color: grey;
 }
 
-body div {
-	background-color: #18b4f7;
-	font-size: 25px;
-	text-align: left;
-	color: white;
-}
-body div a {
+#cookie_consent {
 	background-color: #18b4f7;
 	color: white;
+	text-align: center;
 }
 
-ul {
-    margin: 0;
-  	padding: 0;
-  	overflow: hidden;
+#cookie_consent a:link{
+	background-color: #18b4f7;
+	color: white;
 }
 
-li {
-  float: right;
-}
-
-li a {
-
-  display: block;
+#menuHaut a:link{
+	margin: 0;
+  padding: 0;
+  overflow: hidden;
   color: white;
-  padding: 8px;
-  text-decoration: none;
+  margin-right: 5px;
+}
+
+#menuHaut li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav {
+	text-align: right;
+}
+#boite{
+	border: 5px solid hotpink;
+	background-color: white;
+}
+#statistics{
+	color: white;
+	background: yellow;
+}
+
+.jouer ol{
+		list-style-type: none;
+  	padding-left: 0;
+}
+
+.jouer {
+    display: inline-block;
+}
+
+.jouer a::after {
+    display: inline-block;
+    color: #000;
+    content: '>>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+#categories{
+	color: blue;
+	background-color: lightblue;
+}
+
+.menuMiddle li{
+	list-style-type: none;
+	text-align: left;
+}
+
+#testimonials header{
+	color: lightblue;
 }
 
 table  {
@@ -54,11 +93,28 @@ body {
 footer {
 	color: darkgrey;
 	text-align: center;
+	font-size: 10px;
+	border-top-style: dotted;
+	border-top-width: 2px;
+	margin: 20px;
+	padding: 50px;
+
+} 
+
+footer p {
+	padding: 30px;
 }
 
+#piedPage a:link {
+  color: darkgrey;
+  padding: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
 
-footer ul li a {
-	color: darkgrey;
-	text-align: center;
+#piedPage li{
+	display: inline;
+
 
 }
+
