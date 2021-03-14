@@ -71,18 +71,23 @@ nav {
 	color: lightblue;
 }
 
-table  {
-	border: 1px solid black;
-	border-radius: 5px;
-	border-spacing:0;
-	vertical-align: top;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ .top3{
+	background-color: lightgreen;
+}
+.derniers:nth-child(odd){
+	background-color: indianred;
 }
 
 th {
   background-color: lightblue;
 }
 
-tfoot tr td {
+
+tfoot td {
 	background-color: lightblue;
 }
 
