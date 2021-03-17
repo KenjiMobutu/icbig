@@ -39,37 +39,34 @@
 
 <section>
 	<div id="categories">
-		<header>
-			<h3>
-				Categories
-			</h3>
-		</header>  
+		
+		<h3>
+			Categories
+		</h3> 
 	</div>
 
 	<section>
 		<nav class="menuMiddle">
 			<ul>
-				<li class="menuMiddle"><a href="#">Movies</a></li>
-				<li class="menuMiddle"><a href="#">Music</a></li>
-				<li class="menuMiddle"><a href="#">Games</a></li>
-				<li class="menuMiddle"><a href="#">Puzzles</a></li>
-				<li class="menuMiddle"><a href="#">Cards</a></li>
-				<li class="menuMiddle"><a href="#">Mazes</a></li>
-				<li class="menuMiddle"><a href="#">Show</a></li>
-				<li class="menuMiddle"><a href="#">Software</a></li>
-				<li class="menuMiddle"><a href="#">Ebooks</a></li>
-				<li class="menuMiddle"><a href="#">FAQ</a></li>
-				<li class="menuMiddle"><a href="#">Sign Up</a></li>
+				<li><a href="#">Movies</a></li>
+				<li><a href="#">Music</a></li>
+				<li><a href="#">Games</a></li>
+				<li><a href="#">Puzzles</a></li>
+				<li><a href="#">Cards</a></li>
+				<li><a href="#">Mazes</a></li>
+				<li><a href="#">Show</a></li>
+				<li><a href="#">Software</a></li>
+				<li><a href="#">Ebooks</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Sign Up</a></li>
 			</ul>
 		</nav>
 
 	<div id="boite">
 	<div id="statistics"> 
-		<header>
-			<h3>
-				Statistics
-			</h3>
-		</header>  
+		<h3>
+			Statistics
+		</h3> 
 	</div>
 	</div>
 
@@ -103,23 +100,35 @@
 	</div>
 	</section>
 
-<form>
-Formulaire d'inscription
+<form id="formulaire">
+	<h3>Formulaire d'inscription</h3>
 
-Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.
+	<p>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
 
-Vous êtes déjà membre? Se connecter
+	<p>Vous êtes déjà membre? <a href="# ">Se connecter</a> </p>
 
 Identifiant :
-E-mail :
-Confirmer e-mail :
+ Confirmer e-mail :
 Mot de passe :
 Date de naissance :
-Pays :
-Homme
-Femme
 
-J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.
+<label for="pays">Pays :</label>
+  <select id="pays" name="pays">
+    <option value="be">Belgique</option>
+    <option value="fr">France</option>
+    <option value="de">Allemagne</option>
+    <option value="nl">Pays-Bas</option>
+  </select>
+
+<input type="radio" id="homme" name="genre" value="homme">
+  <label for="homme">Homme</label><br>
+  <input type="radio" id="femme" name="genre" value="femme">
+  <label for="femme">Femme</label><br>
+  <input type="radio" id="other" name="genre" value="autre">
+  <label for="autre">Autre</label>
+
+
+<input type="checkbox">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.
 
 
 </form>
