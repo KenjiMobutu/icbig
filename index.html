@@ -29,49 +29,57 @@
 <div class="searchBox">
 	<form action="/action_page.php">
 		 <input type="text" placeholder="Entrez le nom du jeu..." name="search">
-		 <button type="submit">Submit</button>
+		 <button type="submit">Chercher</button>
   	
 	</form>
 </div>
 
-<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/logo-icbig.png" alt="icbig">
-<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/hhxMhkG.jpg" alt="games_of_thrones" width="500" height="75">
+<img id="icbig" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/logo-icbig.png" alt="icbig">
+<a href="https://store.steampowered.com/app/1105420/Game_of_Thrones_Winter_is_Coming/" target="_blank" title="Play Game of Thrones">
+
+<img id="got" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/hhxMhkG.jpg" alt="games_of_thrones" width="700" height="130">
+</a>
 
 <section>
-	<div id="categories">
-		
-		<h3>
+	<div id="menuCat">
+		<div id="categories">
+			<h3>
 			Categories
-		</h3> 
+			</h3> 
+		</div>
+
+			<nav class="menuMiddle">
+				<ul>
+					<li><a href="#">Movies</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Games</a>
+						<ul>
+							<li><a href="#">Puzzles</a></li>
+							<li><a href="#">Cards</a></li>
+							<li><a href="#">Mazes</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Show</a></li>
+					<li><a href="#">Software</a></li>
+					<li><a href="#">Ebooks</a></li>
+				</ul>
+				</nav>
+				<nav>
+					<ul class="faq">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Sign Up</a></li>
+					</ul>
+				</nav>
 	</div>
 
-	<section>
-		<nav class="menuMiddle">
-			<ul>
-				<li><a href="#">Movies</a></li>
-				<li><a href="#">Music</a></li>
-				<li><a href="#">Games</a></li>
-				<li><a href="#">Puzzles</a></li>
-				<li><a href="#">Cards</a></li>
-				<li><a href="#">Mazes</a></li>
-				<li><a href="#">Show</a></li>
-				<li><a href="#">Software</a></li>
-				<li><a href="#">Ebooks</a></li>
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Sign Up</a></li>
-			</ul>
-		</nav>
-
-	<div id="boite">
 	<div id="statistics"> 
 		<h3>
 			Statistics
-		</h3> 
-	</div>
+		</h3> 	
 	</div>
 
-	<div>
-		<nav class="jouer">
+	<div class="jouer">
+		<nav>
 			<ul>
 				<li ><a href="#">Games</a></li>
 				<li ><a href="#">Cards</a></li>
@@ -89,53 +97,60 @@
 
 		<p>
 			"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"
-			</br><span>Julie Detras,BE</span>
+			<br><span>Julie Detras,BE</span>
 		</p>
 
 		<p>
 		"Time for me to chose the best solutions to my problems! Thanks"
-		</br><span>Mike Powell,UK</span>
+		<br><span>Mike Powell,UK</span>
 		</p>
 
 	</div>
-	</section>
+	
+	<div id="formulaire">
+		<form>
+			<h3>Formulaire d'inscription</h3>
 
-<form id="formulaire">
-	<h3>Formulaire d'inscription</h3>
+			<p>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
 
-	<p>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
+			<p>Vous êtes déjà membre? <a href="# ">Se connecter</a> </p>
 
-	<p>Vous êtes déjà membre? <a href="# ">Se connecter</a> </p>
+			Identifiant :
+			 Confirmer e-mail :
+			Mot de passe :
+			Date de naissance :
 
-Identifiant :
- Confirmer e-mail :
-Mot de passe :
-Date de naissance :
+			<label for="pays">Pays :</label>
+			  <select id="pays" name="pays">
+			  	<option value=""></option>
+			    <option value="be">Belgique</option>
+			    <option value="fr">France</option>
+			    <option value="de">Allemagne</option>
+			    <option value="nl">Pays-Bas</option>
+			  </select><br>
 
-<label for="pays">Pays :</label>
-  <select id="pays" name="pays">
-    <option value="be">Belgique</option>
-    <option value="fr">France</option>
-    <option value="de">Allemagne</option>
-    <option value="nl">Pays-Bas</option>
-  </select>
-
-<input type="radio" id="homme" name="genre" value="homme">
-  <label for="homme">Homme</label><br>
-  <input type="radio" id="femme" name="genre" value="femme">
-  <label for="femme">Femme</label><br>
-  <input type="radio" id="other" name="genre" value="autre">
-  <label for="autre">Autre</label>
-
-
-<input type="checkbox">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.
+				<input type="radio" id="homme" name="genre" value="homme">
+			  <label for="homme">Homme</label><br>
+			  <input type="radio" id="femme" name="genre" value="femme">
+			  <label for="femme">Femme</label><br>
+			  <input type="radio" id="other" name="genre" value="autre">
+			  <label for="autre">Autre</label><br>
 
 
-</form>
+			<p><input type="checkbox">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</p>
+
+			<button type="submit">Envoyer</button>
+		</form>
+	</div>
+
+	<div id="video">
+		<h3>Comment jouer?</h3>
+		<iframe width="420" height="345" src="https://www.youtube.com/embed/oLSMasFvzxE"></iframe>
+	</div> 
 
 	<div id="tableauScores">
 		<table>
-			<h3>Meilleurs scores</h3>
+			<thead>Meilleurs scores</thead>
 			<tr>
 				<th>#</th><th>Rank</th><th>Pseudo</th><th>Score</th>
 			</tr>
@@ -173,12 +188,13 @@ Date de naissance :
 	<div id="piedPage">
 		<footer>
 
-			<ul>
-				<li> <a href="Home">Home</a></li>
-				<li><a href="DownloadNow">Download now</a></li>
-				<li> <a href="FAQ">FAQ</a></li>
-			</ul>
-
+			<div>
+				<ul id="footerMenu">
+					<li> <a href="Home">Home</a></li>
+					<li><a href="DownloadNow">Download now	</a></li>
+					<li> <a href="FAQ">FAQ</a></li>
+				</ul>
+			</div>
 			<p>The purchase of a membership is not a licese to download copyrighted material. Please do your part and respect copyrights.
 			</p>	
 

@@ -22,6 +22,15 @@ body {
 	position: relative;
 
 }
+#icbig {
+	position: relative;
+	left: 50px;
+}
+
+#got{
+position: relative;
+left: 150px;
+}
 
 .container{
 	display: flex;
@@ -80,22 +89,19 @@ section{
 
 	background-color: white;
 	margin: 50px;
-	margin-bottom: 40px;
-	padding-bottom: 200px;
-
+	height: 1100px;
 	
 }
 
 #statistics{
-
-	color: lightgray;
-	background: yellow;
-	width: 85%;
+	float: right;
+ 	width: 79%;
+ 	position: relative;
+ 	bottom: 300px;
   padding: 10px;
   margin: 0;
-	position: relative;
-  left: 225px;
-  top: -290px;
+	color: blue;
+	background-color: orange;
  
 }
 
@@ -142,33 +148,54 @@ section{
 	font-weight: bold;
 }
 
-#testimonials{
-	
-	float: left;
-	position: relative;
-	left: -8px;
-	right: 60px;
-	width: 350px; 
-  padding: 0px;
-  
+.faq li{
+	list-style-type: none;
+	text-align: left;
+	margin-top: 30px;
 
 }
 
+.faq a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#testimonials{
+	
+	float: left;
+	width: 350px; 
+  padding: 0px;
+}
+
 #testimonials p{
+	
 	text-align: right;
+	margin-right: 100px;
+	height: 100px;
+	width: 200px;
+	padding: 10px;
+
 }
 
 #testimonials header{
 	color: blue;
 	background-color: #18b4f7 ;
-	width: 30%;
+	width: 12%;
+	height: 5px;
   padding: 10px;
-  padding-right: 250px;
-  padding-left: 50px;
+  padding-right: 150px;
+  padding-left: 20px;
   margin: 0;
   margin-left: 0px;
 	color: blue;
 	
+}
+
+#testimonials h3 {
+	position: relative;
+	bottom: 8px;
+
 }
 
 #testimonials p span{
@@ -176,24 +203,27 @@ section{
 	font-style: italic;	
 }
 
-form #formulaire{
-	
-	
+#formulaire{
+	background-color: indianred;
+	width: 500px;
+	float: right;
+	padding: 20px;
+	border: 2px solid black;
 	position: relative;
-	top: -450px;
-	left: 450px;
-
+	bottom: 200px;
+	right: 300px;
 }
 
+#video{
+ float: right;
+ }
+
+ #video h3{
+ 	text-align: center;}
 
 
 #tableauScores{
-	padding-bottom: 20px;
-	padding-top: 20px;
-	float: right;
-	position: relative;
-	top: -350px;
-	right: 50px;
+float: right;
 
 	
 }
@@ -233,9 +263,15 @@ footer {
 
 } 
 
+#footerMenu {
+	text-align: center;
+	color: blue;
+}
+
 footer p {
 	padding: 30px;
 	margin: 50px;
+	text-align: center;
 }
 
 #piedPage a:link {
@@ -243,10 +279,13 @@ footer p {
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
+  text-align: center;
 }
 
-#piedPage li{
+#piedPage ul li{
 	display: inline;
+	position: relative;
+	left: 150px;
 
 
 }
