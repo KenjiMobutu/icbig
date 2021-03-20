@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>ICBIG - A crazy webpage</title>
 <meta name="author" content="Kenji Mobutu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 </head>
 <body>
@@ -37,7 +38,7 @@
 <img id="icbig" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/logo-icbig.png" alt="icbig">
 <a href="https://store.steampowered.com/app/1105420/Game_of_Thrones_Winter_is_Coming/" target="_blank" title="Play Game of Thrones">
 
-<img id="got" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/hhxMhkG.jpg" alt="games_of_thrones" width="700" height="130">
+<img id="got" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/hhxMhkG.jpg" alt="games_of_thrones" width="500" height="100">
 </a>
 
 <section>
@@ -62,22 +63,21 @@
 					<li><a href="#">Show</a></li>
 					<li><a href="#">Software</a></li>
 					<li><a href="#">Ebooks</a></li>
-				</ul>
-				</nav>
-				<nav>
 					<ul class="faq">
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">Sign Up</a></li>
 					</ul>
+				</nav>	
+				</ul>
 				</nav>
+				<nav>
+				
 	</div>
 
 	<div id="statistics"> 
-		<h3>
+		<h3 id="statisticsT">
 			Statistics
 		</h3> 	
-	</div>
-
 	<div class="jouer">
 		<nav>
 			<ul>
@@ -86,40 +86,40 @@
 				<li >Inscription</li>
 			</ul>
 		</nav>
-	</div>
-
-	<div id="testimonials">
-		<header>
-			<h3>
-				Testimonials
-			</h3>
-		</header>
-
-		<p>
-			"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"
-			<br><span>Julie Detras,BE</span>
-		</p>
-
-		<p>
-		"Time for me to chose the best solutions to my problems! Thanks"
-		<br><span>Mike Powell,UK</span>
-		</p>
-
-	</div>
-	
+	</div>	
 	<div id="formulaire">
-		<form>
+		<form action="/action_page.php">
 			<h3>Formulaire d'inscription</h3>
 
 			<p>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
 
 			<p>Vous êtes déjà membre? <a href="# ">Se connecter</a> </p>
-
-			Identifiant :
-			 Confirmer e-mail :
-			Mot de passe :
-			Date de naissance :
-
+		
+			<div>
+				<label for="login">
+				Identifiant :
+				</label>
+				<input type="text" placeholder="Login" name="login" id="login">
+			</div> 
+			<div>
+				<label>
+				Confirmer e-mail :
+				</label>
+				<input type="e-mail" placeholder="adresse e-mail" name="e-mail" id="e-mail">
+			</div>
+			<div>
+				<label>
+				Mot de passe :
+				</label>
+				<input type="password" placeholder="Mot de passe" name="pwd" id="pwd">
+			</div>
+			<div>
+				<label>
+				Date de naissance :
+				</label>
+				<input type="Date" placeholder="Date de naissance" name="bd" id="bd">
+			</div>
+		
 			<label for="pays">Pays :</label>
 			  <select id="pays" name="pays">
 			  	<option value=""></option>
@@ -141,14 +141,14 @@
 
 			<button type="submit">Envoyer</button>
 		</form>
-	</div>
+	</div>	
 
-	<div id="video">
+		<div id="video">
 		<h3>Comment jouer?</h3>
 		<iframe width="420" height="345" src="https://www.youtube.com/embed/oLSMasFvzxE"></iframe>
-	</div> 
+		</div> 
 
-	<div id="tableauScores">
+		<div id="tableauScores">
 		<table>
 			<thead>Meilleurs scores</thead>
 			<tr>
@@ -180,8 +180,37 @@
 					</tr>	
 			</tfoot>
 
-		</table>
+			</table>
+		</div>
+		
 	</div>
+
+	
+
+	<div id="testimonials">
+		<header>
+			<h3>
+				Testimonials
+			</h3>
+		</header>
+
+		<p>
+			"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"
+			<br><span>Julie Detras,BE</span>
+		</p>
+
+		<p>
+		"Time for me to chose the best solutions to my problems! Thanks"
+		<br><span>Mike Powell,UK</span>
+		</p>
+
+	</div>
+	
+	
+
+	
+
+	
 </div>
 </section>
 

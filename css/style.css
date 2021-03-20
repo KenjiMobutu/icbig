@@ -23,13 +23,13 @@ body {
 
 }
 #icbig {
-	position: relative;
+	position: absolute;
 	left: 50px;
 }
 
 #got{
-position: relative;
-left: 150px;
+position: absolute;
+right: 400px;
 }
 
 .container{
@@ -89,20 +89,35 @@ section{
 
 	background-color: white;
 	margin: 50px;
+	margin-bottom: 0em;
 	height: 1100px;
-	
+	position: absolute;
+	bottom: -400px;
+	right: 0px;
+  left: 0px;
 }
 
-#statistics{
+#statisticsT{
 	float: right;
  	width: 79%;
- 	position: relative;
- 	bottom: 300px;
-  padding: 10px;
+ 	position: absolute;
+ 	top: -0px;
+ 	right: 0px;
+  padding: 5px;
   margin: 0;
 	color: blue;
 	background-color: orange;
  
+}
+
+
+
+.jouer{
+	
+	position: absolute;
+    top: 50px;
+    left: 250px;
+    
 }
 
 .jouer ul{
@@ -113,10 +128,7 @@ section{
 }
 
 .jouer ul li {
-    display: inline-block;
-    position: relative;
-    left: 500px;
-  	top: -230px;
+  display: inline-block; 
 }
 
 .jouer a::after {
@@ -131,21 +143,29 @@ section{
 
 #categories{
 	 width: 20%;
-  padding: 10px;
   margin: 0;
 	color: blue;
 	background-color: lightblue;
+	float: left;
+    width: 350px;
+    padding: 5px;
 }
+.menuMiddle{
+	position: absolute;
+	top: 50px;
 
+}
 .menuMiddle li{
 	list-style-type: none;
 	text-align: left;
+
 }
 
 .menuMiddle a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
+	border-bottom: 1px solid black;
 }
 
 .faq li{
@@ -166,6 +186,8 @@ section{
 	float: left;
 	width: 350px; 
   padding: 0px;
+  position: absolute;
+  top: 450px;
 }
 
 #testimonials p{
@@ -186,7 +208,7 @@ section{
   padding: 10px;
   padding-right: 150px;
   padding-left: 20px;
-  margin: 0;
+  margin: 15px;
   margin-left: 0px;
 	color: blue;
 	
@@ -205,17 +227,21 @@ section{
 
 #formulaire{
 	
-	width: 500px;
+	width: 800px;
+	height: 400px;
 	float: right;
 	padding: 20px;
 	border: 2px solid black;
-	position: relative;
-	bottom: 200px;
-	right: 300px;
+	position: absolute;
+	top: 100px;
+   right: 50px;
+	
 }
 
 #video{
- float: right;
+    position: absolute;
+    left: 20em;
+    top: 39em;
  }
 
  #video h3{
@@ -224,8 +250,9 @@ section{
 
 #tableauScores{
 float: right;
-
-	
+position: absolute;
+	    top: 800px;
+    left: 850px;
 }
 
 table, th, td {
@@ -252,6 +279,13 @@ body {
 	
 }
 
+#piedPage{
+	position: absolute;
+	bottom: -800px;
+	  right: 0px;
+    left: 0px;
+                                                
+}
 footer {
 	color: darkgrey;
 	text-align: center;
@@ -259,7 +293,7 @@ footer {
 	border-top-style: dotted;
 	border-top-width: 2px;
 	margin: 50px;
-	padding: 50px;
+	padding: 25px;
 
 } 
 
@@ -270,7 +304,6 @@ footer {
 
 footer p {
 	padding: 30px;
-	margin: 50px;
 	text-align: center;
 }
 
@@ -284,9 +317,7 @@ footer p {
 
 #piedPage ul li{
 	display: inline;
-	position: relative;
-	left: 150px;
-
+	
 
 }
 
