@@ -6,8 +6,11 @@
 <meta name="author" content="Kenji Mobutu">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+	<a id="haut"></a>
 	<div id="cookie_consent">
 		<div id="container">
 			<button id="x">
@@ -36,8 +39,8 @@
 </div>
 
 <img id="icbig" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/logo-icbig.png" alt="icbig">
-<a href="https://store.steampowered.com/app/1105420/Game_of_Thrones_Winter_is_Coming/" target="_blank" title="Play Game of Thrones">
 
+<a href="https://store.steampowered.com/app/1105420/Game_of_Thrones_Winter_is_Coming/" target="_blank" title="Play Game of Thrones">
 <img id="got" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/hhxMhkG.jpg" alt="games_of_thrones" width="500" height="100">
 </a>
 
@@ -86,40 +89,47 @@
 				<li >Inscription</li>
 			</ul>
 		</nav>
-	</div>	
+	</div>
+	<div id="fb">
+		<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/fb-google-plus-sign-in.png" alt="fb" width="250" >
+		
+	</div>
+
 	<div id="formulaire">
-		<form action="/action_page.php">
+		<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/keys.png">
+
+		<div class="formulaireText">
+		<form action="/action_page.php" method="">
+			
 			<h3>Formulaire d'inscription</h3>
 
-			<p>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
+			<div id="formSansTitre">
+			<p><br>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
 
 			<p>Vous êtes déjà membre? <a href="# ">Se connecter</a> </p>
 		
 			<div>
 				<label for="login">
-				Identifiant :
 				</label>
-				<input type="text" placeholder="Login" name="login" id="login">
+				<input type="text" placeholder="Identifiant" name="login" id="login">
 			</div> 
 			<div>
-				<label>
-				Confirmer e-mail :
-				</label>
 				<input type="e-mail" placeholder="adresse e-mail" name="e-mail" id="e-mail">
 			</div>
 			<div>
-				<label>
-				Mot de passe :
-				</label>
+				<input type="e-mail" placeholder="Confirmer adresse e-mail" name="e-mail" id="e-mail">
+			</div>
+			<div>
 				<input type="password" placeholder="Mot de passe" name="pwd" id="pwd">
 			</div>
 			<div>
 				<label>
 				Date de naissance :
 				</label>
-				<input type="Date" placeholder="Date de naissance" name="bd" id="bd">
+				<input type="date" name="bd" id="bd">
 			</div>
-		
+
+			
 			<label for="pays">Pays :</label>
 			  <select id="pays" name="pays">
 			  	<option value=""></option>
@@ -128,18 +138,19 @@
 			    <option value="de">Allemagne</option>
 			    <option value="nl">Pays-Bas</option>
 			  </select><br>
-
+			
 				<input type="radio" id="homme" name="genre" value="homme">
-			  <label for="homme">Homme</label><br>
+			  <label for="homme">Homme</label>
 			  <input type="radio" id="femme" name="genre" value="femme">
-			  <label for="femme">Femme</label><br>
+			  <label for="femme">Femme</label>
 			  <input type="radio" id="other" name="genre" value="autre">
-			  <label for="autre">Autre</label><br>
+			  <label for="autre">Autre</label>
 
 
-			<p><input type="checkbox">J'accepte les Conditions d'utilisation et la Politique de confidentialité de ICBig.</p>
-
-			<button type="submit">Envoyer</button>
+			<p><input type="checkbox">J'accepte les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité </a> de ICBig.</p>
+			</div>
+			</div>
+			<button><img width="220" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/signUpBtn.jpg" alt="inscrire"></button>
 		</form>
 	</div>	
 
@@ -206,14 +217,15 @@
 
 	</div>
 	
-	
+	<div id="lienHautPage">
+		<a id="flecheHaut" href="#haut"><img width="15" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/top.png" alt="lienHautPage"></a>
+		<a href="#haut">Haut de page</a>
+	</div>
 
-	
-
-	
 </div>
 </section>
 
+	
 	<div id="piedPage">
 		<footer>
 
