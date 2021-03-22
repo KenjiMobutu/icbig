@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ac01367df2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<a id="haut"></a>
@@ -54,21 +55,21 @@
 
 			<nav class="menuMiddle">
 				<ul>
-					<li><a href="#">Movies</a></li>
-					<li><a href="#">Music</a></li>
-					<li><a href="#">Games</a>
+					<li><i class="fas fa-film"></i><a href="#">Movies</a></li>
+					<li><i class="fas fa-music"></i><a href="#">Music</a></li>
+					<li><i class="fas fa-gamepad"></i><a href="#">Games</a>
 						<ul>
-							<li><a href="#">Puzzles</a></li>
-							<li><a href="#">Cards</a></li>
-							<li><a href="#">Mazes</a></li>
+							<li><a href="#">: Puzzles</a></li>
+							<li><a href="#">: Cards</a></li>
+							<li><a href="#">: Mazes</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Show</a></li>
-					<li><a href="#">Software</a></li>
-					<li><a href="#">Ebooks</a></li>
+					<li><i class="fas fa-theater-masks"></i><a href="#">Show</a></li>
+					<li><i class="fas fa-desktop"></i><a href="#">Software</a></li>
+					<li><i class="fas fa-book"></i><a href="#">Ebooks</a></li>
 					<ul class="faq">
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Sign Up</a></li>
+						<li><i class="fas fa-paperclip"></i><a href="#">FAQ</a></li>
+						<li><i class="fas fa-sign-in-alt"></i><a href="#">Sign Up</a></li>
 					</ul>
 				</nav>	
 				</ul>
@@ -90,13 +91,13 @@
 			</ul>
 		</nav>
 	</div>
-	<div id="fb">
-		<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/fb-google-plus-sign-in.png" alt="fb" width="250" >
-		
-	</div>
-
+	
 	<div id="formulaire">
 		<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/keys.png">
+		<div id="fb">
+			<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/fb-google-plus-sign-in.png" alt="fb" width="250" >
+		</div>
+
 
 		<div class="formulaireText">
 		<form action="/action_page.php" method="">
@@ -160,30 +161,40 @@
 		</div> 
 
 		<div id="tableauScores">
+			<h3>Classement</h3>
+			<caption>Mise à jour dans 15 minutes<br></caption>
 		<table>
-			<thead>Meilleurs scores</thead>
+			<thead id="titreTableau">Meilleurs scores</thead>
+
+			
 			<tr>
 				<th>#</th><th>Rank</th><th>Pseudo</th><th>Score</th>
 			</tr>
+
+			<div id="top3">
 			<tr>
-				<td class="top3" rowspan="3"> Top 3</td>
-				<td class="top3">1</td><td class="top3">KillerPlayer</td><td class="top3">7500</td>
+				<td rowspan="3" id="top3"> Top 3</td><td>1</td><td>KillerPlayer</td><td>7500</td>
+			</tr>
+
+			<tr>
+				<td>2</td><td>TheFan</td><td>6500</td>
 			</tr>
 			<tr>
-				<td class="top3">2</td><td class="top3">TheFan</td><td class="top3">6500</td>
+				<td>3</td><td>HatMan</td><td>6350</td>
+			</tr>
+			</div>
+
+			<div class="derniers">
+			<tr>
+				<td class="fa-rotate-45"><i class="fas fa-arrow-up" data-fa-transform="rotate-45" style="color:green;"></i></td><td>4</td><td>Dillinguer</td><td>4000</td>
 			</tr>
 			<tr>
-				<td class="top3">3</td><td class="top3">HatMan</td><td class="top3">6350</td>
-			</tr>	
-			<tr>
-				<td class="derniers">&#8599;</td><td class="derniers">4</td><td class="derniers">Dillinguer</td><td class="derniers">4000</td>
+				<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>5</td><td>BillyBoy</td><td>3995</td>
 			</tr>
 			<tr>
-				<td>&#8600;</td><td>5</td><td>BillyBoy</td><td>3995</td>
+				<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>6</td><td>HopeLess</td><td>3500</td>
 			</tr>
-			<tr>
-				<td>&#8600;</td><td>6</td><td>HopeLess</td><td>3500</td>
-			</tr>
+			</div>	
 
 			<tfoot>
 					<tr>

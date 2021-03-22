@@ -164,25 +164,44 @@ section{
 .menuMiddle{
 	position: absolute;
 	top: 50px;
+	left: -10px;
+
 
 }
+
 .menuMiddle li{
 	list-style-type: none;
 	text-align: left;
-
+	padding: 1px;
+	border-top: 1px solid black;
 }
 
 .menuMiddle a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	border-bottom: 1px solid black;
+	margin: 25px;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.menuMiddle i{
+
+}
+
+.faq{
+
+
 }
 
 .faq li{
 	list-style-type: none;
 	text-align: left;
-	margin-top: 30px;
+	padding: 10px;
+	margin-top: 15Px;
+	border-top: 1px solid black;
+	position: relative;
+	left: -50px;
 
 }
 
@@ -198,7 +217,7 @@ section{
 	width: 350px; 
   padding: 0px;
   position: absolute;
-  top: 450px;
+  top: 350px;
 }
 
 #testimonials p{
@@ -273,8 +292,8 @@ section{
 
 #fb{
 	position: absolute;
-	left: 800px;
-	top: 230px;
+	left: 500px;
+	top: 130px;
 	border-left: 1px solid black;
 	padding-left: 20px;
 }
@@ -290,29 +309,35 @@ section{
     position: absolute;
     left: 20em;
     top: 39em;
+    padding: 20px;
  }
 
  #video h3{
- 	text-align: left;}
+ 	text-align: left;
+ 	padding-bottom: 20px;
+ }
 
 
 #tableauScores{
 float: right;
 position: absolute;
-	    top: 800px;
+	  top: 750px;
     left: 850px;
+  margin: 20px;  
 }
 
+ #titreTableau{
+	text-align: center;
+}
+
+#top3{
+	background-color: seagreen;
+}
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
- .top3{
-	background-color: lightgreen;
-}
-.derniers:nth-child(odd){
-	background-color: indianred;
-}
+
 
 th {
   background-color: lightblue;
@@ -321,6 +346,26 @@ th {
 
 tfoot td {
 	background-color: lightblue;
+}
+
+.fa-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    bottom: -10px;
+}
+
+.fa-rotate--45 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 10px;
 }
 
 #lienHautPage{
@@ -337,7 +382,7 @@ tfoot td {
 
 #piedPage{
 	position: absolute;
-	bottom: -800px;
+	bottom: -650px;
 	  right: 0px;
     left: 0px;
                                                 
@@ -373,7 +418,5 @@ footer p {
 
 #piedPage ul li{
 	display: inline;
-	
-
 }
 
