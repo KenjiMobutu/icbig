@@ -64,17 +64,19 @@
 							<li><a href="#">: Mazes</a></li>
 						</ul>
 					</li>
+
 					<li><i class="fas fa-theater-masks"></i><a href="#">Show</a></li>
 					<li><i class="fas fa-desktop"></i><a href="#">Software</a></li>
 					<li><i class="fas fa-book"></i><a href="#">Ebooks</a></li>
+					
 					<ul class="faq">
 						<li><i class="fas fa-paperclip"></i><a href="#">FAQ</a></li>
 						<li><i class="fas fa-sign-in-alt"></i><a href="#">Sign Up</a></li>
 					</ul>
-				</nav>	
+					
 				</ul>
-				</nav>
-				<nav>
+			</nav>
+				
 				
 	</div>
 
@@ -92,15 +94,17 @@
 		</nav>
 	</div>
 	
-	<div id="formulaire">
-		<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/keys.png">
+		<div id="formulaire">
+			<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/keys.png" alt="icbig">
+
+			
 		<div id="fb">
 			<img src="/Users/kenjimobutu/Documents/GitHub/icbig/images/fb-google-plus-sign-in.png" alt="fb" width="250" >
 		</div>
 
 
 		<div class="formulaireText">
-		<form action="/action_page.php" method="">
+		<form action="/action_page.php">
 			
 			<h3>Formulaire d'inscription</h3>
 
@@ -115,10 +119,10 @@
 				<input type="text" placeholder="Identifiant" name="login" id="login">
 			</div> 
 			<div>
-				<input type="e-mail" placeholder="adresse e-mail" name="e-mail" id="e-mail">
+				<input type="email" placeholder="adresse email" name="email" id="email">
 			</div>
 			<div>
-				<input type="e-mail" placeholder="Confirmer adresse e-mail" name="e-mail" id="e-mail">
+				<input type="email" placeholder="Confirmer adresse email" name="email" id="emailConfirm">
 			</div>
 			<div>
 				<input type="password" placeholder="Mot de passe" name="pwd" id="pwd">
@@ -133,7 +137,7 @@
 			
 			<label for="pays">Pays :</label>
 			  <select id="pays" name="pays">
-			  	<option value=""></option>
+			  	<option value="null"></option>
 			    <option value="be">Belgique</option>
 			    <option value="fr">France</option>
 			    <option value="de">Allemagne</option>
@@ -149,59 +153,70 @@
 
 
 			<p><input type="checkbox">J'accepte les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité </a> de ICBig.</p>
+
+			<div id="twitter">
+				<a href="https://twitter.com/kmobutu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="fr" data-show-count="false">Follow @kmobutu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
-			</div>
+
+			
+	
+
+		</div>
+	</div>
+
 			<button><img width="220" src="/Users/kenjimobutu/Documents/GitHub/icbig/images/signUpBtn.jpg" alt="inscrire"></button>
 		</form>
 	</div>	
 
 		<div id="video">
-		<h3>Comment jouer?</h3>
-		<iframe width="420" height="345" src="https://www.youtube.com/embed/oLSMasFvzxE"></iframe>
+			<h3>Comment jouer?</h3>
+			<iframe width="420" height="345" src="https://www.youtube.com/embed/oLSMasFvzxE"></iframe>
 		</div> 
 
+	<div>
 		<div id="tableauScores">
-			<h3>Classement</h3>
-			<caption>Mise à jour dans 15 minutes<br></caption>
-		<table>
-			<thead id="titreTableau">Meilleurs scores</thead>
+				<h3>Classement</h3>
+				
+			<table>
 
-			
-			<tr>
-				<th>#</th><th>Rank</th><th>Pseudo</th><th>Score</th>
-			</tr>
+				<thead>Meilleurs scores</thead>
 
-			<div id="top3">
-			<tr>
-				<td rowspan="3" id="top3"> Top 3</td><td>1</td><td>KillerPlayer</td><td>7500</td>
-			</tr>
+				
+				<tr>
+					<th>#</th><th>Rank</th><th>Pseudo</th><th>Score</th>
+				</tr>
 
-			<tr>
-				<td>2</td><td>TheFan</td><td>6500</td>
-			</tr>
-			<tr>
-				<td>3</td><td>HatMan</td><td>6350</td>
-			</tr>
-			</div>
+				<div id="top3">
+					<tr id="top3">
+						<td rowspan="3"> Top 3</td><td>1</td><td>KillerPlayer</td><td>7500</td>
+					</tr>
 
-			<div class="derniers">
-			<tr>
-				<td class="fa-rotate-45"><i class="fas fa-arrow-up" data-fa-transform="rotate-45" style="color:green;"></i></td><td>4</td><td>Dillinguer</td><td>4000</td>
-			</tr>
-			<tr>
-				<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>5</td><td>BillyBoy</td><td>3995</td>
-			</tr>
-			<tr>
-				<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>6</td><td>HopeLess</td><td>3500</td>
-			</tr>
-			</div>	
+					<tr id="top3">
+						<td>2</td><td>TheFan</td><td>6500</td>
+					</tr>
+					<tr id="top3">
+						<td>3</td><td>HatMan</td><td>6350</td>
+					</tr>
+				</div>
 
-			<tfoot>
+				<div >
+					<tr class="derniers">
+						<td class="fa-rotate-45"><i class="fas fa-arrow-up" data-fa-transform="rotate-45" style="color:green;"></i></td><td>4</td><td>Dillinguer</td><td>4000</td>
+					</tr>
 					<tr>
-						<td colspan="4">Last update: May 2017</td>
-					</tr>	
-			</tfoot>
+						<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>5</td><td>BillyBoy</td><td>3995</td>
+					</tr>
+					<tr class="derniers">
+						<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>6</td><td>HopeLess</td><td>3500</td>
+					</tr>
+				</div>	
 
+				<tfoot>
+						<tr>
+							<td colspan="4">Last update: May 2017</td>
+						</tr>	
+				</tfoot>
+				<caption>Mise à jour dans 15 minutes<br></caption>
 			</table>
 		</div>
 		
@@ -233,7 +248,7 @@
 		<a href="#haut">Haut de page</a>
 	</div>
 
-</div>
+	</div>
 </section>
 
 	

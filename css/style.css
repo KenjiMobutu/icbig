@@ -16,7 +16,6 @@ body {
 #x{
 	float: right;
 	background: transparent;
-	border: none;
 	color: white;
 	font-weight: bold;
 	font-size: 15px;
@@ -189,10 +188,6 @@ section{
 
 }
 
-.faq{
-
-
-}
 
 .faq li{
 	list-style-type: none;
@@ -212,12 +207,12 @@ section{
 }
 
 #testimonials{
-	
 	float: left;
 	width: 350px; 
   padding: 0px;
   position: absolute;
   top: 350px;
+  left: 0px;
 }
 
 #testimonials p{
@@ -256,7 +251,7 @@ section{
 }
 
 #formulaire{
-		width: 800px;
+	width: 800px;
 	height: 400px;
 	float: right;
 	padding: 20px;
@@ -269,6 +264,7 @@ section{
 #formulaire a{
 	text-decoration: none;
 }
+
 #formulaire p{
 	line-height: 2.5;
 }
@@ -298,6 +294,15 @@ section{
 	padding-left: 20px;
 }
 
+ #twitter{
+	position: relative;
+	left: 540px;
+	top: -70px;
+	
+}
+
+
+
 #formulaire button{
 	position: absolute;
 	left: 250px;
@@ -319,19 +324,29 @@ section{
 
 
 #tableauScores{
-float: right;
-position: absolute;
+	float: right;
+	position: absolute;
 	  top: 750px;
     left: 850px;
   margin: 20px;  
 }
 
- #titreTableau{
+  #titreTableau{
+	position: relative;
+	top: -150px;
+}
+
+ #top3{
+	background-color: lightgreen;
+}
+
+ .derniers{
+  background: lightgrey;
+}
+#tableauScores h3 {
 	text-align: center;
 }
 
-#top3{
-	background-color: seagreen;
 }
 table, th, td {
   border: 1px solid black;
@@ -342,7 +357,11 @@ table, th, td {
 th {
   background-color: lightblue;
 }
-
+caption{
+	font-size: 15px;
+	position:relative ;
+	top: -80px;
+}
 
 tfoot td {
 	background-color: lightblue;
