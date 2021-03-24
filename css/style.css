@@ -327,8 +327,9 @@ section{
 	float: right;
 	position: absolute;
 	  top: 750px;
-    left: 850px;
-  margin: 20px;  
+    left: 840px;
+  margin: 10px;
+  padding-top: 20px; 
 }
 
   #titreTableau{
@@ -347,20 +348,22 @@ section{
 	text-align: center;
 }
 
-}
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  text-align: center;
+  width: 300px;
 }
 
 
 th {
   background-color: lightblue;
 }
+
 caption{
 	font-size: 15px;
-	position:relative ;
-	top: -80px;
+  caption-side: top;
 }
 
 tfoot td {
@@ -374,7 +377,7 @@ tfoot td {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     position: relative;
-    bottom: -10px;
+    bottom: 0px;
 }
 
 .fa-rotate--45 {
@@ -384,7 +387,7 @@ tfoot td {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     position: relative;
-    bottom: 10px;
+    bottom: 0px;
 }
 
 #lienHautPage{
